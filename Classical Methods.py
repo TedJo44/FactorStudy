@@ -380,13 +380,7 @@ if __name__ == '__main__':
     res_wls = cross_regression(Mret, regressors, choice, True, np.sqrt(Msize))
     
     
-    
-ffc = pd.read_csv('.\data\FFC_monthly.csv').set_index('date') 
-IV = pd.read_csv('.\data\Factor\Characteristics\IV.csv').set_index('Unnamed: 0')
-g5 = univar_sort(IV,5)
-raw = cal_raw_return(g5, 1, Mret)
-raw.mean()
-alpha = cal_alphabeta(raw,FFC)
+  
 
 
 
